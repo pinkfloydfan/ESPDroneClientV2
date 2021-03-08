@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title> {{ title }} </title>
+    </head>
+        <h1>
+            {{ title }}
+        </h1>
+    <body>
+        it me
+    <script>
+
+        /*
+        const ws = new WebSocket('ws://192.168.4.22:80');
+
+        ws.onmessage = function (event) {
+            //let's make a big assumption that event.data is a blob - this obviously won't work if `event` is anotherthing other than a blob
+            //this blob contains the raw binary of the image the ESP has just taken
+            var rawBinary = []
+            //Formats the binary in an array that createObjectURL can take in
+            rawBinary.push(event.data)
+            //Turns the array into a URL that React can then magically turn into an image
+            //N.B. Check if this induces a memory leak - are the URLs destroyed after a certain time?
+            var url = URL.createObjectURL(new Blob(rawBinary, {type: 'image/jpeg'}))
+            document.getElementById("cameraImage").src = url;
+
+        }.bind(this)
+        
+        */
+    
+    </script>
+    <img src = {{imageURL}} id = "cameraImage"/> 
+
+    <body>
+
+    </body>
+    </body>
+</html>
